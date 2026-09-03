@@ -1,8 +1,11 @@
 package com.launchcode2026.BeccaKUnit2FinalProject.models;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+
+import java.time.LocalDate;
 
 @Entity
 public class User {
@@ -15,13 +18,18 @@ public class User {
     private String email;
     private String password;
     private String location;
-    private String type;
+    private LocalDate birthday;
+}
 
-    }
+public User () {
+}
 
-    public Potion(int id, String name, int potency, String type) {
-        this.id = id;
-        this.name = name;
-        this.potency = potency;
-        this.type = type;
-    }
+public User (String first_name, String last_name, String username, String email, String password, String location, LocalDate birthday) {
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.username = username;
+    this.email = email;
+    this.password = password;
+    this.location = location;
+    this.birthday = birthday;
+}
