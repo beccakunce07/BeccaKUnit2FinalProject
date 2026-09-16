@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 public class BeccaKUnit2FinalProjectApplication {
 
-	public static void main(String[] args) {
+	static void main(String[] args) {
 		SpringApplication.run(BeccaKUnit2FinalProjectApplication.class, args);
 	}
 

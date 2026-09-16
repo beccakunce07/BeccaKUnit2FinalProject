@@ -2,6 +2,9 @@ package com.launchcode2026.BeccaKUnit2FinalProject.models;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "self_love_bombs")
@@ -13,5 +16,6 @@ public class LoveBomb {
 
     private String message;
     private String category;
+    private LocalDate timeSubmitted;
 
 }

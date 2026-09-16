@@ -20,5 +20,5 @@ public class CheckIn {
 //
 //    }
 
-    // how do I set the id to the date/time the form is submitted?
+    // how do I add the date/time the form is submitted?
     //how do i connect the buttons from my app to have those be the foreign keys(?) for the check in data
