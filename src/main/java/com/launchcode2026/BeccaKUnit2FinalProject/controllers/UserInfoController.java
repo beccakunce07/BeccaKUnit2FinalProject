@@ -57,10 +57,10 @@ public class UserInfoController {
         return userInfoRepository.findAll();
     }
 
-    @GetMapping("{id}")
-    public Optional<UserInfo> findById(@PathVariable Long id){
-        return userInfoRepository.findById(id);
-    }
+//    @GetMapping("{id}")
+//    public Optional<UserInfo> findById(@PathVariable Long id){
+//        return userInfoRepository.findById(id);
+//    }
 
 }
 
