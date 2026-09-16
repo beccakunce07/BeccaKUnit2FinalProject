@@ -22,11 +22,6 @@ public class UserInfo {
     private String location;
     private LocalDate birthday;
 
-
-public UserInfo(){
-
-}
-
 public UserInfo(Long id, String firstName, String lastName, String username, String email, String password, String location, LocalDate birthday){
     this.id = id;
     this.firstName = firstName;
@@ -36,37 +31,41 @@ public UserInfo(Long id, String firstName, String lastName, String username, Str
     this.password = password;
     this.location = location;
     this.birthday = birthday;
-}
+}}
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+// HOW DO I MAKE MY PASSWORD HASHED??
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
-    public void setBirthday(LocalDate birthday) {
-        this.birthday = birthday;
-    }
-}
+//  I DONT NEED THESE RIGHT? BECAUSE I AM USING @DATA?
+//    public void setId(Long id) {
+//        this.id = id;
+//    }
+//
+//    public void setFirstName(String firstName) {
+//        this.firstName = firstName;
+//    }
+//
+//    public void setLastName(String lastName) {
+//        this.lastName = lastName;
+//    }
+//
+//    public void setUsername(String username) {
+//        this.username = username;
+//    }
+//
+//    public void setEmail(String email) {
+//        this.email = email;
+//    }
+//
+//    public void setPassword(String password) {
+//        this.password = password;
+//    }
+//
+//    public void setLocation(String location) {
+//        this.location = location;
+//    }
+//
+//    public void setBirthday(LocalDate birthday) {
+//        this.birthday = birthday;
+//    }
+//}
