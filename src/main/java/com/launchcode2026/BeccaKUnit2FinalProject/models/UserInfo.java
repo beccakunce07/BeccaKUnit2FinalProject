@@ -4,11 +4,13 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.Data;
 import java.time.LocalDate;
 
 
 @Entity
-public class User {
+@Data
+public class UserInfo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -21,11 +23,11 @@ public class User {
     private LocalDate birthday;
 
 
-public User(){
+public UserInfo(){
 
 }
 
-public User(int id, String firstName, String lastName, String username, String email, String password, String location, LocalDate birthday){
+public UserInfo(int id, String firstName, String lastName, String username, String email, String password, String location, LocalDate birthday){
     this.id = id;
     this.firstName = firstName;
     this.lastName = lastName;
